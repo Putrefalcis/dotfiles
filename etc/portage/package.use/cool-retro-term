@@ -1,0 +1,7 @@
+app-shells/zsh unicode
+# required by x11-terms/cool-retro-term-9999::dkay
+# required by cool-retro-term (argument)
+>=dev-qt/qtquickcontrols-5.4.1 widgets
+# required by x11-terms/cool-retro-term-9999::dkay
+# required by cool-retro-term (argument)
+>=dev-qt/qtdeclarative-5.4.1 localstorage

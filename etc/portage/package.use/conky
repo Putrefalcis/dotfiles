@@ -1,0 +1,1 @@
+app-admin/conky -X hddtemp iostats mpd

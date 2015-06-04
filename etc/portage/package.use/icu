@@ -1,0 +1,6 @@
+# required by www-client/chromium-44.0.2369.0::gentoo
+# required by @selected
+# required by @world (argument)
+>=dev-libs/libxml2-2.9.2-r1 icu
+
+dev-qt/qtwebkit gstreamer icu

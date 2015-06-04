@@ -1,0 +1,4 @@
+CC=clang
+CXX=clang++
+BUILD_CC=clang
+BUILD_CXX=clang++

@@ -1,0 +1,2 @@
+#Mask pentoo genkernel
+sys-kernel/genkernel::pentoo

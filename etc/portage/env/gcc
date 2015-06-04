@@ -1,0 +1,5 @@
+CC="x86_64-pc-linux-gnu-gcc-4.9.2"
+CXX="x86_64-pc-linux-gnu-g++-4.9.2"
+
+CFLAGS="-pipe -O3 -march=native -mtune=native"
+CXXFLAGS="${CFLAGS}"

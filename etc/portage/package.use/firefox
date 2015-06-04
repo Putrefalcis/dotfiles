@@ -1,0 +1,4 @@
+net-misc/iputils -caps -filecaps
+# required by www-client/firefox-36.0.4::gentoo
+# required by firefox (argument)
+>=dev-lang/python-2.7.9-r2:2.7 sqlite

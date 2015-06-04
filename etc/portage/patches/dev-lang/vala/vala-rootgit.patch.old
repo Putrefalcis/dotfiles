@@ -1,0 +1,39 @@
+@@ -5,14 +5,14 @@
+ EAPI="5"
+ GCONF_DEBUG="no"
+ 
+-inherit gnome2
++inherit gnome2 autotools
+ 
+ DESCRIPTION="Compiler for the GObject type system"
+ HOMEPAGE="https://wiki.gnome.org/Vala"
+ 
+ LICENSE="LGPL-2.1"
+ SLOT="0.26"
+-KEYWORDS="~alpha amd64 ~arm hppa ~ia64 ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc x86 ~amd64-fbsd ~x86-fbsd ~arm-linux ~x86-linux"
++KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~amd64-fbsd ~x86-fbsd ~arm-linux ~x86-linux"
+ IUSE="test +vapigen"
+ 
+ RDEPEND="
+@@ -30,6 +30,10 @@
+ 		>=dev-libs/glib-2.26:2 )
+ "
+ 
++src_prepare() {
++	eautoreconf
++}
++
+ src_configure() {
+ 	DOCS="AUTHORS ChangeLog MAINTAINERS NEWS README"
+ 	gnome2_src_configure --disable-unversioned
+--- /dev/null	2014-02-05 15:16:17.274000000 +0100
++++ files/vala-0.26.2-r1-sandbox.patch	2014-02-07 07:16:45.746617777 +0100
+@@ -0,0 +1,8 @@
++--- /var/tmp/portage/dev-lang/vala-0.26.2-r1/work/vala-0.22.1/configure.ac.orig	2014-02-07 07:15:58.708617732 +0100
+++++ /var/tmp/portage/dev-lang/vala-0.26.2-r1/work/vala-0.22.1/configure.ac	2014-02-07 07:16:11.410617744 +0100
++@@ -1,4 +1,4 @@
++-AC_INIT([vala], m4_esyscmd([build-aux/git-version-gen .tarball-version]), [j@bitron.ch], [vala])
+++AC_INIT([vala], "", [j@bitron.ch], [vala])
++ AC_CONFIG_SRCDIR([Makefile.am])
++ AC_CONFIG_AUX_DIR([build-aux])
++ AC_CONFIG_HEADERS(config.h)

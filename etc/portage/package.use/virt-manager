@@ -1,0 +1,10 @@
+# required by app-emulation/virt-manager-1.2.0::gentoo[gtk]
+# required by virt-manager (argument)
+>=net-libs/gtk-vnc-0.5.4 python
+# required by app-emulation/virt-manager-1.2.0::gentoo[gtk]
+# required by virt-manager (argument)
+>=net-misc/spice-gtk-0.25-r1 python usbredir gtk3
+# required by app-emulation/virt-manager-1.2.0::gentoo
+# required by virt-manager (argument)
+>=app-emulation/libvirt-glib-0.2.0 python
+

@@ -1,0 +1,5 @@
+# required by sys-devel/prelink-20130503::gentoo
+# required by app-emulation/wine-1.7.39::gentoo[prelink]
+# required by app-emulation/playonlinux-4.2.6::gentoo
+# required by playonlinux (argument)
+>=dev-libs/elfutils-0.161 static-libs

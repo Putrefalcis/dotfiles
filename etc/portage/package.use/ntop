@@ -1,0 +1,8 @@
+# required by net-analyzer/ntop-5.0.1-r1::gentoo
+# required by ntop (argument)
+>=net-analyzer/rrdtool-1.5.0_rc2 graph
+# required by media-gfx/graphviz-2.38.0::gentoo
+# required by net-analyzer/ntop-5.0.1-r1::gentoo
+# required by ntop (argument)
+>=media-libs/gd-2.1.1-r1 fontconfig
+

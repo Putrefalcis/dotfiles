@@ -1,0 +1,4 @@
+net-misc/iputils -caps -filecaps
+# required by media-video/mpv-0.8.3::gentoo[libav]
+# required by mpv (argument)
+media-video/mpv lua libcaca

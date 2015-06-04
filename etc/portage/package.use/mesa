@@ -1,0 +1,2 @@
+# For d3d9 wine (wine-a-holics overlay)
+>=media-libs/mesa-10.5.5 d3d9

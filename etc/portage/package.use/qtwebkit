@@ -1,0 +1,46 @@
+# required by dev-ruby/rdoc-4.1.2-r1::gentoo[ruby_targets_ruby22]
+# required by dev-lang/ruby-2.2.1::gentoo[rdoc]
+# required by dev-ruby/test-unit-3.0.9-r1::gentoo[ruby_targets_ruby22]
+>=dev-ruby/racc-1.4.12 ruby_targets_ruby22
+# required by dev-lang/ruby-2.2.1::gentoo
+# required by dev-ruby/test-unit-3.0.9-r1::gentoo[ruby_targets_ruby22]
+>=dev-ruby/power_assert-0.2.3 ruby_targets_ruby22
+# required by dev-lang/ruby-2.2.1::gentoo
+# required by dev-ruby/test-unit-3.0.9-r1::gentoo[ruby_targets_ruby22]
+>=dev-ruby/rake-10.4.2 ruby_targets_ruby22
+# required by dev-lang/ruby-2.2.1::gentoo[rdoc]
+# required by dev-ruby/test-unit-3.0.9-r1::gentoo[ruby_targets_ruby22]
+>=dev-ruby/rdoc-4.1.2-r1 ruby_targets_ruby22
+# required by virtual/rubygems-10::gentoo[ruby_targets_ruby22]
+# required by dev-lang/ruby-2.2.1::gentoo
+# required by dev-ruby/test-unit-3.0.9-r1::gentoo[ruby_targets_ruby22]
+>=dev-ruby/rubygems-2.4.6 ruby_targets_ruby22
+# required by dev-ruby/rdoc-4.1.2-r1::gentoo[ruby_targets_ruby22]
+# required by dev-lang/ruby-2.2.1::gentoo[rdoc]
+# required by dev-ruby/test-unit-3.0.9-r1::gentoo[ruby_targets_ruby22]
+>=dev-ruby/json-1.8.2-r1 ruby_targets_ruby22
+# required by dev-qt/qtnetwork-5.4.1::gentoo[ssl]
+# required by dev-qt/qtwebkit-5.4.1::gentoo
+# required by qtwebkit (argument)
+=dev-libs/openssl-1.0.2-r3 -bindist
+# required by dev-lang/ruby-2.2.1::gentoo
+# required by dev-ruby/test-unit-3.0.9-r1::gentoo[ruby_targets_ruby22]
+>=dev-ruby/minitest-5.5.1 ruby_targets_ruby22
+# required by dev-ruby/racc-1.4.12::gentoo[-test,ruby_targets_ruby22]
+# required by dev-ruby/rdoc-4.1.2-r1::gentoo[ruby_targets_ruby19]
+# required by dev-lang/ruby-2.2.1::gentoo[rdoc]
+# required by dev-ruby/test-unit-3.0.9-r1::gentoo[ruby_targets_ruby22]
+>=virtual/rubygems-10 ruby_targets_ruby22
+# required by dev-qt/qtcore-5.4.1::gentoo
+# required by dev-qt/qtnetwork-5.4.1::gentoo
+# required by dev-qt/qtwebkit-5.4.1::gentoo
+# required by qtwebkit (argument)
+>=dev-libs/libpcre-8.36 pcre16
+# required by dev-lang/ruby-2.2.1::gentoo
+# required by dev-ruby/racc-1.4.12::gentoo[ruby_targets_ruby22]
+# required by dev-ruby/rdoc-4.1.2-r1::gentoo[ruby_targets_ruby19]
+# required by dev-lang/ruby-1.9.3_p551::gentoo[rdoc]
+# required by virtual/rubygems-10::gentoo[ruby_targets_ruby19]
+# required by dev-lang/ruby-2.0.0_p643::gentoo
+# required by dev-ruby/minitest-5.5.1::gentoo[ruby_targets_ruby20]
+>=dev-ruby/test-unit-3.0.9-r1 ruby_targets_ruby22

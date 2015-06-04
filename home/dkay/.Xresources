@@ -1,0 +1,89 @@
+Xft.antialias: true
+Xft.dpi:        96
+
+! urxvt
+URxvt*buffered: true
+URxvt*cursorBlink: true 
+URxvt.font:xft:Droid Sans Mono for Powerline:style=Regular:pixelsize=12,\
+	   xft:PowerlineSymbols:style=Medium:pixelsize=12,\
+	   xft:Menlo for Powerline:style=Regular:pixelsize=12
+URxvt*depth: 32
+URxvt*borderless: 1
+URxvt*scrollBar: false
+URxvt*loginShell: true
+URxvt*secondaryScroll: true # Enable Shift-PageUp/Down in screen
+URxvt*saveLines: 5000
+URxvt*termName: rxvt-unicode
+URxvt.perl-lib: /usr/lib/urxvt/perl/
+URxvt.perl-ext-common: default,matcher
+URxvt.url-launcher: /usr/bin/chromium
+URxvt.matcher.button: 1
+! URxvt*.transparent: true
+! URxvt*.shading: 0 to 99 darkens, 101 to 200 lightens
+! URxvt*.shading: 25
+URxvt.background: rgba:1111/1111/1111/dddd
+URxvt.iso14755: False
+URxvt.keysym.Shift-Control-C: perl:clipboard:copy
+URxvt.keysym.Shift-Control-V: perl:clipboard:paste
+URxvt.clipboard.copycmd:  xsel -ib
+URxvt.clipboard.pastecmd: xsel -ob
+
+! --- special colors ---
+
+*background: #220033
+*foreground: #d9e6f2
+
+! --- standard colors ---
+
+! black
+*color0: #000000
+
+! bright_black
+*color8: #1a1a1a
+
+! red
+*color1: #b8997a
+
+! bright_red
+*color9: #dbccbd
+
+! green
+*color2: #7ab899
+
+! bright_green
+*color10: #bddbcc
+
+! yellow
+*color3: #99b87a
+
+! bright_yellow
+*color11: #ccdbbd
+
+! blue
+*color4: #997ab8
+
+! bright_blue
+*color12: #ccbddb
+
+! magenta
+*color5: #b87a99
+
+! bright_magenta
+*color13: #dbbdcc
+
+! cyan
+*color6: #7a99b8
+
+! bright_cyan
+*color14: #bdccdb
+
+! white
+*color7: #d9d9d9
+
+! bright_white
+*color15: #ffffff
+
+
+! ------------------------------------------------------------------------------
+! --- end of terminal colors section -------------------------------------------
+! ------------------------------------------------------------------------------

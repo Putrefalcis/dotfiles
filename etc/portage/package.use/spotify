@@ -1,0 +1,4 @@
+# required by dev-qt/qtwebkit-4.8.6-r1::gentoo[gstreamer]
+# required by media-sound/spotify-0.9.11.27-r2::gentoo
+# required by spotify (argument)
+>=dev-libs/libxml2-2.9.2 -icu
