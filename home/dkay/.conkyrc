@@ -1,0 +1,19 @@
+background no
+format_human_readable yes
+out_to_console yes
+out_to_x no 
+temperature_unit fahrenheit
+total_run_times 0
+update_interval 1
+#use_spacer left
+use_spacer none
+ 
+TEXT
+${nodename} ${uptime_short} | \
+M ${mem}/${memmax} | \
+/sda ${diskio sda} /sdb ${diskio sdb} | \
+${if_existing /proc/net/route ppp0}P0 U ${upspeed ppp0} D ${downspeed ppp0} |${endif}\
+${if_existing /proc/net/route enp4s0}E0 U ${upspeed enp4s0} D ${downspeed enp4s0} |${endif}\
+${if_existing /proc/net/route wlan0}W0 U ${upspeed eth0} D ${downspeed eth0} |${endif}\
+ CPU ${execi 6 sensors | grep "Core 2:" | cut -c 16-17}°C \
+     ${time %a, %b %d %Y  %H:%M (%z)}
