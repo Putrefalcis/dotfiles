@@ -15,7 +15,7 @@ export AWT_TOOLKIT=MToolkit
 # Start a terminal in the foreground. If this dies, X dies.
 #exec urxvt
 
-# dwm + conky + feh + d-bus + java fix
+# dwm + conky + feh + d-bus + java fix + screensaver
 
 if [ -d /etc/X11/xinit/xinitrc.d ] ; then
     for f in /etc/X11/xinit/xinitrc.d/?* ; do
@@ -24,9 +24,14 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
     unset f
 fi
 
+xscreensaver -no-splash &
+
 (sleep 1 && /usr/bin/ck-launch-session) &
+
 #/usr/bin/stalonetray --geometry 16x16+150-586 --icon-size 16 &
+
 sh ~/.fehbg &
+
 (sleep 2 && /usr/bin/nm-applet) &
 (conky | while read LINE; do xsetroot -name "$LINE"; done) &
 
