@@ -14,7 +14,7 @@ M ${mem}/${memmax} | \
 /sda ${diskio sda} /sdb ${diskio sdb}| \
 ${if_existing /proc/net/route ppp0}P0 U ${upspeed ppp0} D ${downspeed ppp0} |${endif}\
 ${if_existing /proc/net/route enp4s0}E0 U ${upspeed enp4s0} D ${downspeed enp4s0} |${endif}\
-${if_existing /proc/net/route wlan0}W0 U ${upspeed eth0} D ${downspeed eth0} |${endif}\
+${if_existing /proc/net/route wlan0}W0 U ${upspeed eth0} D ${downspeed eth0}|${endif}\
  CPU ${execi 6 sensors | grep "Core 2:" | cut -c 16-17}°C \
 @${execi 6 ~dkay/Documents/Corsair/OpenCorsairLink/RPM.sh}RPM \
      ${time %a, %b %d %Y  %H:%M (%z)}

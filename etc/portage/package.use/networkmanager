@@ -1,1 +1,1 @@
-net-misc/networkmanager resolvconf -wifi -modemmanager
+net-misc/networkmanager resolvconf -wext -wifi -modemmanager

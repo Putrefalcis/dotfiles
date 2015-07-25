@@ -26,8 +26,6 @@ fi
 
 xscreensaver -no-splash &
 
-(sleep 1 && /usr/bin/ck-launch-session) &
-
 #/usr/bin/stalonetray --geometry 16x16+150-586 --icon-size 16 &
 
 sh ~/.fehbg &
@@ -36,4 +34,4 @@ sh ~/.fehbg &
 (conky | while read LINE; do xsetroot -name "$LINE"; done) &
 
 wmname LG3D &
-exec dwm
+exec ck-launch-session dbus-launch --sh-syntax --exit-with-session dwm
