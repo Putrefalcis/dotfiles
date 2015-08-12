@@ -1,2 +1,3 @@
 app-emulation/qemu   spice
 app-emulation/spice  client
+>=media-libs/mesa-10.6.3 gles2

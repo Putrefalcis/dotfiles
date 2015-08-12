@@ -31,5 +31,7 @@ sh ~/.fehbg &
 (sleep 2 && /usr/bin/nm-applet) &
 (conky | while read LINE; do xsetroot -name "$LINE"; done) &
 
+redshift-gtk &
+
 wmname LG3D &
 exec ck-launch-session dbus-launch --sh-syntax --exit-with-session dwm
