@@ -1,2 +1,3 @@
 app-office/libreoffice clang
 www-client/chromium clang
+www-client/firefox clang
